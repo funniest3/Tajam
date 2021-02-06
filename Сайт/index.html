@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+    <title>Tajam</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class = "navigation">
+            <div class = "nav-wrapper">
+                <a class = "logo-link" href = "#">
+                    <img src = "img/Other/NavbarLogo.png" width="44" height= "50" alt = "Tajam-Logo">
+                    <span class = "logo-name">tajam</span>
+                </a>
+            </div>
+            <ul class ="navigation-list">
+                <li class="navigation-item"><a href="#">HOME</a></li>
+                <li class="navigation-item"><a href="#">ABOUT</a></li>
+                <li class="navigation-item"><a href="#">EXPERTISE</a></li>
+                <li class="navigation-item"><a href="#">TEAMS</a></li>
+                <li class="navigation-item"><a href="#">WORKS</a></li>
+                <li class="navigation-item"><a href="#">PEOPLE SAY</a></li>
+                <li class="navigation-item"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+        <div class = "wrapper">
+            <div class = "content">
+                <H1>We Are Awesome Creative Agency</H1>
+                <span class="line"></span>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem <br>
+                quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibhid elit. Duis sed odio sit amet nibh<br>
+                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <a class = "button" href = "#">LEARN MORE</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class = "about-us">
+            <div class = "wrapper">
+                <div class = "about-us-text">
+                    <div class="about-logo">
+                        <img src = "C:\Users\User\Desktop\Сайт\img\Other\AboutUsLogo.png" width = "235" height = "229" alt = "Tajem-Logo">
+                    </div>
+                    <div class = "text">
+                        <h2>OUR STORY</h2>
+                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor<br>
+                        aliquet. Aenean sollicitudin, lorem quis bibendum auctor, 
+                        nisi elit consequat ipsum,<br> 
+                        nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                        
+                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br>
+                        Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu <br>
+                        ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <a class = "button" href = "#expertise">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "about-us-video">
+                <span class = "play">
+                    <a class="play-button" href="#video1">
+                </a>
+                    <span class = "play-text">
+                        WATCH OUR STORY
+                    </span>
+                </span>
+                
+                
+                
+            </div>
+<!-- Модальный блок начало-->
+<div class="overlay" id="video1"></div>
+<div class="modal">
+ <div class="video" id="youtube">
+   <iframe style="border: none;" width="100%" height="100%" id="player" src="https://www.youtube.com/embed/KvUgaHTNit4?version=3&enablejsapi=1&color=red&showinfo=0&vq=highres&modestbranding=1&buffering=0&loop=0&rel=0&autoplay=0" allowfullscreen></iframe>
+ </div>
+  <div>      
+ <a href="#close" id="stop" class="close"></a>
+ </div>
+ <script>
+        var player;
+        function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player');
+        }
+
+        $('#stop').click(function(){
+        player.stopVideo()
+        })
+ </script>
+</div>
+<!-- Модальный блок конец -->
+        </section>
+
+            <div class = "wrapper">
+            <section class = "expertise" id = "expertise">
+                <div class="expertise-describe">
+                    <h3 class="expertise-title">EXPERTISE</h3>
+                    <span class="expertise-text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+                    <hr class = "expertise-hr">
+                </div>
+                <div class="expertise-about">
+                    <div class="expertise-about-item item-1">
+                        <div class = "about-item-text">
+                            <h5>WEB DESIGN & DEVELOPMENT</h5>
+                            <p>This is Photoshop's version  of Lorem <br>Ipsum.
+                            Proin gravida nibth vel velit <br> auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-about-item item-2">
+                        <div class = "about-item-text">
+                            <h5>BRANDING IDENTITY</h5>
+                            <p>This is Photoshop's version  of Lorem <br>Ipsum.
+                            Proin gravida nibh vel velit  <br>auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-about-item item-3">
+                        <div class = "about-item-text">
+                            <h5>MOBILE APP</h5>
+                            <p>This is Photoshop's version  of Lorem <br>Ipsum.
+                            Proin gravida nibh vel velit  <br>auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-about-item item-4">
+                        <div class = "about-item-text">
+                            <h5>SEARCH ENGINE OPTIMIZATION</h5>
+                            <p>This is Photoshop's version of Lorem <br>Ipsum.
+                            Proin gravida nibh vel velit <br> auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-about-item item-5">
+                        <div class = "about-item-text">
+                            <h5>GAME DEVELOPMENT</h5>
+                            <p>This is Photoshop's version  of Lorem<br> Ipsum.
+                            Proin gravida nibh vel velit <br> auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-about-item item-6">
+                        <div class = "about-item-text">
+                            <h5>MADE WITH LOVE</h5>
+                            <p>This is Photoshop's version  of Lorem <br>Ipsum.
+                            Proin gravida nibh vel velit  <br>auctor aliquet Aenean.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Закончил здесь--> 
+
+        <section class = "team" >
+            <div class = "wrapper">
+                <div class = "team-describe">
+                    <h3 class="team-title">MEET OUR AMAZING TEAM</h3>
+                    <span class="team-text">Lorem ipsum dolor sit amet proin gravida nibh vel velit</span>
+                    <hr class = "team-hr">
+                </div>
+                <div class = "team-cards">
+                    <div class="team-card">
+                        <img class = "team-card-img" src = "" width = "220" height = "229" alt = "">
+                        <div class = "team-card-info">
+                            <span class = "team-card-name">
+                                SEMF UCUK
+                            </span>
+                            <span class = "team-card-post">
+                                CEO & FOUNDER
+                            </span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img class = "team-card-img" src = ""  width = "220" height = "229" alt = "">
+                        <div class = "team-card-info">
+                            <span class = "team-card-name">
+                                DIK ADALIN
+                            </span>
+                            <span class = "team-card-post">
+                                ENGINEERING
+                            </span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img class = "team-card-img" src = "" width = "220" height = "229" alt = "">
+                        <div class = "team-card-info">
+                            <span class = "team-card-name">
+                                JENG KOL
+                            </span>
+                            <span class = "team-card-post">
+                                DESIGNER
+                            </span>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img class = "team-card-img" src = "" width = "220" height = "229" alt = "">
+                        <div class = "team-card-info">
+                            <span class = "team-card-name">
+                                PET ROMAK
+                            </span>
+                            <span class = "team-card-post">
+                                MARKETING
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class = "invite-in-team">
+                    Become part of our dream team, let's join us !
+                </span>
+                <a class = "button" href = "">WE ARE HIRING</a>
+            </div>
+        </section>
+
+        <section class = "our-works">
+            <div class = "wrapper our-work-text">
+                <h4 class = "our-work-title">
+                    OUR WORK
+                </h4>
+                <a class = "our-work-show" href = "#">
+                    See All Projects in dribbble
+                </a>
+            </div>
+            <div class="our-work-cards">
+                <img class = "our-work-card-img card-1" src = "" alt = "">
+                <img class = "our-work-card-img card-2" src = "" alt = "">
+                <img class = "our-work-card-img card-3" src = "" alt = "">
+                <img class = "our-work-card-img card-4" src = "" alt = "">
+                <img class = "our-work-card-img card-5" src = "" alt = "">
+                <img class = "our-work-card-img card-6" src = "" alt = "">
+                <img class = "our-work-card-img card-1" src = "" alt = "">
+                <img class = "our-work-card-img card-2" src = "" alt = "">
+                <img class = "our-work-card-img card-3" src = "" alt = "">
+                <img class = "our-work-card-img card-4" src = "" alt = "">
+                <img class = "our-work-card-img card-5" src = "" alt = "">
+                <img class = "our-work-card-img card-6" src = "" alt = "">
+            </div>
+            <a class = "button cards-button" href = "#">LOAD MORE</a>
+        </section>
+
+        <div class = "wrapper">
+            <section class = "contact">
+                <div class = "contact-with-us">
+                    <div class = "contact-form">
+                        <h3 class = "form-title">GIVE US A GOOD NEWS</h3>
+                        <input type = "text" placeholder="Name" name = "UserName" pattern="[A-Za-z]">
+                        <input type = "email" placeholder="Email" name = "UserEmail">
+                        <input type = "text" placeholder="Subject" name = "UserSubjectText">
+                        <textarea name = "UserText" placeholder="Your message"></textarea>
+                        <input class = "button form-button" type = "submit" value = "SUBMIT">
+                    </div>
+                </div>
+            </section>
+            <footer class = "main-footer">
+                <div class = "wrapper">
+                    <div class="main-footer-grid">
+                        <div class = "footer-about">
+                            <a class = "logo-link footer-logo" href = "#">
+                                <img src = "img/Other/NavbarLogo.png" width="44" height= "50" alt = "Tajem-Logo">
+                                <span class = "logo-name">tajam</span>
+                            </a>
+                            <span class = "footer-about-text">lorem quis bibendum auctor, nisi elit<br>
+                            consequat ipsum, nec sagittis sem nibh elit.<br>
+                            Duis sed odio sit amet auctror a ornare odio<br>
+                            non mauris vitae erat in elit</span>
+                        </div>
+                        <div class = "footer-location">
+                            <h5 class = "footer-title">OUR STUDIO</h5>
+                            <span class = "location-info">
+                                Ruko cucruk, Jl. Radio luar dalem jos<br>
+                                No.12 - 13, Kalideres - Jakarta Barat<br>
+                                11480 - Indonesia
+                            </span>
+                            <span class = "location-tel">
+                                (+62) 21-2224 3333
+                            </span>
+                        </div>
+                        <div class = "newsletter">
+                            <h5 class="footer-title">STAY IN TOUCH</h5>
+                            <div class = "newsletter-mailing">
+                                <input class = "newsletter-input" type = "text" placeholder="Subscribe our newsletter">
+                                <input class = "newsletter-submit" type = "submit" value = "">
+                            </div>
+                            <div class = "footer-social">
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                                <a class="social-icon" href="#">
+                                    <span class = "visually-hidden"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "footer-help">
+                            <a href="#">HELP</a>
+                            <a href="#">TERMS & CONDITION</a>
+                            <a href="#">PRIVACY</a>
+                        </div>
+                        <span class = "copyright">
+                            Copyright &copy; 2015 - Tajem Creative
+                        </span>
+                    </div>
+                </div>
+            </footer>
+            
+        </body>
+        </html>
